@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1187491213.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #navbar {
+            width: 100%;
+            height: 1500px;
+            border: 2px solid black;
+            display: flex;
+            background-color: #0f1014;
+        }
+        #navbar >div:nth-child(1) {
+            width: 10%;
+            height: 620px;
+            /* border: 2px solid red; */
+            position: fixed;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 120px;
+            /* border: 2px solid blue; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >img {
+            width: 50%;
+            margin: 20px 30px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >button {
+            background-color: #352d24;
+            color: #dcb46c;
+            border-radius: 10px;
+            margin: 0px 20px;
+            font-weight: lighter;
+        }
+        
+        #navbar >div:nth-child(1) >div:nth-child(2) {
+            /* width: 100%; */
+            height: 40px;
+            /* border: 2px solid blue;  */
+            margin: 50px 0px 10px 0px;
+            /* display: flex; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >i {
+            margin: 10px 55px;
+        }
+        /* #navbar >div:nth-child(1) >div:nth-child(2) >h3{
+            width: 100px;
+            color: #ccd2db;
+            margin: 0px 0px 63px 0px;
+            margin-top: -25px;
+            margin-left: 100px;
+            display: none;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2):hover >h3 {
+            display: initial;
+            cursor: pointer;
+        } */
+        #navbar >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(2) {
+            width: 90%;
+            height: 1500px;
+            /* border: 2px solid red; */
+            margin-left: 135px;
+        }
+        .below {
+            width: 100%;
+            height: 500px;
+            /* border: 2px solid gold; */
+            margin: 10px 0px;
+        }
+        .below video side  {
+            z-index: 000;
+            position: absolute;
+            top: 100;
+            left: 100;
+            width: 90%;
+            /* height:50px; */
+            object-fit: cover;
+        }
+        .below >div:nth-child(2)  {
+            /* height: 150px; */
+            margin: 20px 5px;
+            color: snow;
+        }
+        .below >div:nth-child(3) {
+            margin: 10px 5px;
+            width: 40%;
+            color: snow;
+        }
+        .below >div:nth-child(4)  {
+            display: flex;
+            width: 24%;
+            height: 50px;
+            /* border: 2px solid red; */
+            justify-content: space-between;
+            margin: 40px 5px;
+        }
+        .below >div:nth-child(4) >div:nth-child(1) >button {
+            width: 250%;
+            font-size: 15px;
+            color: snow;
+            font-weight: bold;
+            background-color:#212225;
+            height: 50px;
+            border-radius: 5px;
+        } 
+        .below >div:nth-child(4) >div:nth-child(2) >button {
+            width: 250%;
+            font-size: 15px;
+            color: snow;
+            font-weight: bold;
+            background-color:#212225;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .third {
+            width: 100%;
+            height: 300px;
+            /* border: 2px solid gold; */
+        }
+        .third >div:nth-child(1) >h3{
+            width: 100%;
+            height: 30px;
+            color: snow;
+            /* border: 2px solid red; */
+            margin: 5px 0px;
+        }
+        .third >div:nth-child(2){
+            width: 100%;
+            height: 250px;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 0px;
+        }
+        .third >div:nth-child(2) >div {
+            width: 15%;
+            height: 220px;
+            margin: 0px 5px;
+        }
+        .third >div:nth-child(2) >div >img {
+            width: 100%;
+            height: 220px;
+            border-radius: 5px;
+        }
+        .third >div:nth-child(2) >div >img:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+        .fourth {
+            width: 100%;
+            height: 300px;
+            /* border: 2px solid gold; */
+        }
+        .fourth >div:nth-child(1) >h3{
+            width: 100%;
+            height: 30px;
+            color: snow;
+            /* border: 2px solid red; */
+            margin: 5px 0px;
+        }
+        .fourth >div:nth-child(2){
+            width: 100%;
+            height: 250px;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 0px;
+        }
+        .fourth >div:nth-child(2) >div {
+            width: 15%;
+            height: 220px;
+            margin: 0px 5px;
+        }
+        .fourth >div:nth-child(2) >div >img {
+            width: 100%;
+            height: 220px;
+            border-radius: 5px;
+        }
+        .fourth >div:nth-child(2) >div >img:hover {
+            -ms-transform: scale(1.5); /* IE 9 */
+            -webkit-transform: scale(1.5); /* Safari 3-8 */
+            transform: scale(1.5);
+            cursor: pointer;
+        }
+        .footer {
+            width: 100%;
+            height: 200px;
+            /* border: 2px solid gold; */
+            margin: 35px 0px;
+        }
+        
+        .footer >div:nth-child(1) {
+            width: 100%;
+            height: 130px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer >div:nth-child(1) >div{
+            width: 24%;
+            height: 130px;
+            /* border: 2px solid gold; */
+        }
+        .footer >div:nth-child(1) >div >h3 {
+            color: rgb(202, 195, 195);
+            font-size: 16px;
+        }
+        .footer >div:nth-child(1) >div >p {
+            color: rgb(114, 113, 113);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .footer >div:nth-child(1) >div >i {
+            margin: 10px 20px;
+        }
+        .footer >div:nth-child(2) {
+            width: 100%;
+            height: 60px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer >div:nth-child(2) >div:nth-child(1) {
+            width: 30%;
+            height: 60px;
+            /* border: 2px solid gold; */
+        }
+        .footer >div:nth-child(2) >div:nth-child(1) >p {
+            color: gray;
+            font-size: 14px;
+            margin: 8px 0px;
+        }
+        .footer >div:nth-child(2) >div:nth-child(2) {
+            width: 30%;
+            height: 60px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer >div:nth-child(2) >div:nth-child(2) >img {
+            width: 40%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <img src="logo-d-plus.svg"/>
+                <button>Subscribe ></button>
+            </div>
+            <div>
+                <i class="fa-regular fa-circle-user" style="color: #ced4de;"></i>
+                <!-- <h3>My Space</h3>
+                <h3>Search</h3>
+                <h3>Home</h3>
+                <h3>TV</h3>
+                <h3>Movies</h3>
+                <h3>Sports</h3> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass" style="color: #cdd4e0;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-house" style="color: #ccd2db;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-tv" style="color: #e3e7ed;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-radio" style="color: #d7dce5;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball" style="color: #d8dee9;"></i>
+            </div>
+        </div>
+        <div>
+            <div class="below">
+                <!-- <video class="video side" src="./insidious-the-red-door-trailer-1_h720p.mov" autoplay muted loop></video> -->
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,h_148/sources/r1/cms/prod/8405/1408405-t-17443bee6e28"/>
+                <div>
+                    <span>2021 -</span> <span>1h 20m -</span> <span>Hindi -</span> <button>U/A 18+</button>
+                </div>
+                <div>
+                    <p>The call for some fun and adventure brings a couple to <br>
+                        Dharmashala, a small hill station nestled in the Himalayas. However, an anomous twist of fate puts...
+                    </p>
+                    <h4>Thriller</h4>
+                </div>
+                <div>
+                    <div>
+                        <button>Watch Now</button>
+                    </div>
+                    <div>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div>
+                    <h3>Movies Recommended For You</h3>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/sources/r1/cms/prod/old_images/vertical/MOVIE/3314/1770003314/1770003314-v"/>
+                    </div>
+                    <div>
+                        <img src="./1389231-v-6191b0d9af4f.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./1476757-v-a8b0daa00556.jpg"/>
+                    </div>
+                    <div>
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/sources/r1/cms/prod/old_images/vertical/MOVIE/4189/1000074189/1000074189-v"/>
+                    </div>
+                    <div>
+                        <img src="./1389222-v-8625fe197b77.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./1389219-v-9752e6e5bb92.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./847721-v.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <div>
+                    <h3>Popular Movies</h3>
+                </div>
+                <div>
+                    <div>
+                        <img src="./1389222-v-8625fe197b77.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./1479747-v-f079dabffd5e.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./593669-v.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./1389231-v-6191b0d9af4f.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./1476757-v-a8b0daa00556.jpg"/>
+                    </div>
+                    <div>
+                        <img src="./647676-v.jpg"/>
+                    </div>
+                    <div>
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/sources/r1/cms/prod/7309/177309-v"/>
+                    </div>
+                </div>
+            </div>
+            <diV class="footer">
+                <div>
+                    <div>
+                        <h3>Company</h3>
+                        <p>About Us</p>
+                        <p>Careers</p>
+                    </div>
+                    <div>
+                        <h3>View Website in</h3>
+                        <p>English</p>
+                    </div>
+                    <div>
+                        <h3>Need Help?</h3>
+                        <p>Visit Help Center</p>
+                        <p>Share Feedback</p>
+                    </div>
+                    <div>
+                        <h3>Connect with Us</h3>
+                        <i class="fa-brands fa-facebook-f" style="color: #d3d5d9;"></i>
+                        <i class="fa-brands fa-twitter" style="color: #d1d7e0;"></i>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p>© 2023 STAR. All Rights Reserved.</p>
+                        <p>Terms of Use  Privacy Policy  FAQ</p>
+                    </div>
+                    <div>
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1661346101/google-playstore"/>
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1661346071/ios-appstore"/>
+                    </div>
+                </div>
+            </diV>
+        </div>
+</body>
+</html>

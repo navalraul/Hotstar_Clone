@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1187491213.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #upper {
+            width: 100%;
+            height: 100px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            background-color: #0f1014;
+        }
+        #upper >div:nth-child(1) {
+            width: 10%;
+            height: 80px ;
+            /* border: 2px solid gold; */
+            margin: 10px 50px;
+        }
+        #upper >div:nth-child(1) >img {
+            width: 100%;
+            height: 80px;
+        }
+        #upper >div:nth-child(2) {
+            width: 22%;
+            height: 50px ;
+            /* border: 2px solid gold; */
+            display: flex;
+            margin: 20px 50px;
+            justify-content: space-between;
+        }
+        #upper >div:nth-child(2) >div:nth-child(1) >button {
+            width: 130px;
+            height: 50px;
+            color: #d1d7e0;
+            background-color: #222326;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        #upper >div:nth-child(2) >div:nth-child(2) >button {
+            width: 130px;
+            height: 50px;
+            color: #d1d7e0;
+            background-color: blue;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        #second {
+            width: 100%;
+            height: 680px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #0f1014;
+        }
+        #second >div:nth-child(1) {
+            width: 35%;
+            height: 620px ;
+            border: 2px solid gold;
+        }
+        #second >div:nth-child(1) >video {
+            width: 100%;
+            height: auto;
+        }
+        #second >div:nth-child(2) {
+            width: 55%;
+            height: 620px ;
+            /* border: 2px solid gold; */
+        }
+        #second >div:nth-child(2) >div:nth-child(1) {
+            width: 100%;
+            height: 460px ;
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) {
+            width: 55%;
+            height: 450px;
+            /* border: 1px solid green;    */
+            font-family: sans-serif;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >h4 {
+            color: #d1d7e0;
+            margin: 40px 5px 5px 5px;
+            font-size: 20px;
+
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >p {
+            color: #94979b;
+            margin: 0px 5px;
+            font-size: 15px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) {
+            width: 20%;
+            height: 450px;
+            /* border: 1px solid green;    */
+            background-color: #1c1e26;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h3{
+            color: gold;
+            margin: 3px 10px 20px 45px;
+            font-family: sans-serif;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >i {
+            margin: 10px 0px 50px 60px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h2 {
+            color: #d1d7e0;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin: 25px 10px 30px 40px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h4 {
+            color: #d3d5d9;
+            margin: 0px 0px 30px 60px;
+            font-size: 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h5 {
+            color: #d3d5d9;
+            margin: 20px 0px 0px 15px;
+            font-weight: lighter;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) {
+            width: 20%;
+            height: 450px;
+            /* border: 1px solid green;    */
+        }
+
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >h3{
+            color: rgb(146, 145, 139);
+            margin: 3px 10px 20px 30px;
+            font-family: sans-serif;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >i {
+            margin: 10px 0px 50px 60px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >h2 {
+            color: #d1d7e0;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin: 25px 30px 30px 50px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >h4 {
+            color: #d3d5d9;
+            margin: 0px 0px 30px 60px;
+            font-size: 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(1) >div:nth-child(3) >h5 {
+            color: #d3d5d9;
+            margin: 20px 0px 0px 15px;
+            font-weight: lighter;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) {
+            width: 100%;
+            height: 100px ;
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-between;
+        }
+        #second >div:nth-child(2) >div:nth-child(2):hover {
+            cursor: pointer;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) {
+            width: 32%;
+            height: 90px;
+            border: 2px solid rgb(218, 209, 209); 
+            border-radius: 10px;  
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >h2 {
+            margin: 10px 20px;
+            font-family: sans-serif;
+            color: rgb(241, 138, 21);
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div {
+            display: flex;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div >h3 {
+            font-size: 25px;
+            color: #d1d7e0;
+            font-family: sans-serif;
+            margin: 0px 0px 0px 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(1) >div >span {
+            font-size: 15px;
+            color: #d1d7e0;
+            font-family: sans-serif;
+            margin: 10px 10px 0px 10px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) {
+            width: 32%;
+            height: 90px;
+            border: 1px solid gray;   
+            border-radius: 10px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >h2 {
+            margin: 10px 20px;
+            font-family: sans-serif;
+            color: rgb(241, 138, 21);
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div {
+            display: flex;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >h3 {
+            font-size: 25px;
+            color: #d1d7e0;
+            font-family: sans-serif;
+            margin: 0px 0px 0px 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(2) >div >span {
+            font-size: 15px;
+            color: #d1d7e0;
+            font-family: sans-serif;
+            margin: 10px 10px 0px 10px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(3) {
+            width: 32%;
+            height: 90px;
+            border: 1px solid gray;   
+            border-radius: 10px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(3) >h2 {
+            margin: 10px 20px;
+            font-family: sans-serif;
+            color: rgb(241, 138, 21);
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(3) >div {
+            display: flex;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(3) >div >h3 {
+            font-size: 25px;
+            color: #d1d7e0;
+            font-family: sans-serif;
+            margin: 0px 0px 0px 20px;
+        }
+        #second >div:nth-child(2) >div:nth-child(2) >div:nth-child(3) >div >span {
+            font-size: 15px;
+            color: #d1d7e0;
+            font-family: sans-serif;
+            margin: 10px 10px 0px 10px;
+        }
+        #second >div:nth-child(2) >div:nth-child(3) {
+            width: 100%;
+            height: 50px ;
+            /* border: 2px solid blue; */
+            margin: 10px 0px;
+        }
+        #second >div:nth-child(2) >div:nth-child(3) >button:hover {
+            cursor: pointer;
+        }
+        #second >div:nth-child(2) >div:nth-child(3) >button {
+            width: 100%;
+            height: 50px;
+            font-size: 20px;
+            color: snow;
+            border-radius: 10px;
+            background-color: rgb(20, 20, 219);
+        }
+        .footer {
+            width: 100%;
+            height: 200px;
+            /* border: 2px solid gold; */
+            /* margin: 0px 0px; */
+            background-color: #0f1014;
+        }
+        
+        .footer >div:nth-child(1) {
+            width: 80%;
+            height: 130px;
+            /* border: 2px solid gold; */
+            margin: 0px 10px 0px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer >div:nth-child(1) >div{
+            width: 24%;
+            height: 130px;
+            /* border: 2px solid gold; */
+        }
+        .footer >div:nth-child(1) >div >h3 {
+            color: rgb(202, 195, 195);
+            font-size: 16px;
+        }
+        .footer >div:nth-child(1) >div >p {
+            color: rgb(114, 113, 113);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .footer >div:nth-child(1) >div >i {
+            margin: 10px 20px;
+        }
+        .footer >div:nth-child(2) {
+            width: 80%;
+            height: 60px;
+            /* border: 2px solid gold; */
+            margin: 0px 10px 0px 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer >div:nth-child(2) >div:nth-child(1) {
+            width: 30%;
+            height: 60px;
+            /* border: 2px solid gold; */
+        }
+        .footer >div:nth-child(2) >div:nth-child(1) >p {
+            color: gray;
+            font-size: 14px;
+            margin: 8px 0px;
+        }
+        .footer >div:nth-child(2) >div:nth-child(2) {
+            width: 30%;
+            height: 60px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer >div:nth-child(2) >div:nth-child(2) >img {
+            width: 40%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="upper">
+        <div>
+            <!-- <i class="fa-sharp fa-regular fa-circle-xmark" style="color: #d9dbde;"></i> -->
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1656431456/web-images/logo-d-plus.svg"/>
+        </div>
+        <div>
+            <div>
+                <button>English</button>
+            </div>
+            <div>
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div>
+            <video src="./Platform.gif"></video>
+        </div>
+        <div>
+            <div>
+                <div>
+                    <h4>All content </h4>
+                    <p>Movies, Live Sports, TV , Specials</p>
+                    <h4>Watch on TV or Laptop</h4>
+                    <h4>Ads free movies and shows (except sports)</h4>
+                    <h4>Number of devices that can be logged in</h4>
+                    <h4>Max video quality</h4>
+                    <h4>Max audio quality</h4>
+                    <p>Atoms available on selected titles only</p>
+                </div>
+                <div>
+                    <h3>Super</h3>
+                    <i class="fa-solid fa-check" style="color: #e2e5e9;"></i>
+                    <br>
+                    <i class="fa-solid fa-check" style="color: #e2e5e9;"></i><br>
+                    <i class="fa-solid fa-xmark" style="color: #e6ebf4;"></i>
+                    <h4>2</h4>
+                    <h2>Full HD 1080p</h2>
+                    <h5>Dolby Atoms</h5>
+                </div>
+                <div>
+                    <h3>Premium</h3>
+                    <i class="fa-solid fa-check" style="color: #e2e5e9;"></i>
+                    <br>
+                    <i class="fa-solid fa-check" style="color: #e2e5e9;"></i><br>
+                    <i class="fa-solid fa-xmark" style="color: #e6ebf4;"></i>
+                    <h4>4</h4>
+                    <h2>4K 2160p</h2>
+                    <h5>Dolby Atoms</h5>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Super</h2>
+                    <div>
+                    <h3>899</h3> <span>/ year</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>Premium</h2>
+                    <div>
+                    <h3>1499</h3> <span>/ year</span>
+                    </div>
+                </div>
+                <div>
+                    <h2>Premium</h2>
+                    <div>
+                    <h3>299</h3> <span>/ year</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button>Continue with Super ></button>
+            </div>
+        </div>
+    </div>
+    <diV class="footer">
+        <div>
+            <div>
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+            </div>
+            <div>
+                <h3>View Website in</h3>
+                <p>English</p>
+            </div>
+            <div>
+                <h3>Need Help?</h3>
+                <p>Visit Help Center</p>
+                <p>Share Feedback</p>
+            </div>
+            <div>
+                <h3>Connect with Us</h3>
+                <i class="fa-brands fa-facebook-f" style="color: #d3d5d9;"></i>
+                <i class="fa-brands fa-twitter" style="color: #d1d7e0;"></i>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>© 2023 STAR. All Rights Reserved.</p>
+                <p>Terms of Use  Privacy Policy  FAQ</p>
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1661346101/google-playstore"/>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1661346071/ios-appstore"/>
+            </div>
+        </div>
+    </diV>
+</body>
+</html>
