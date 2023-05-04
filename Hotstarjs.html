@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/1187491213.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        #navbar {
+            width: 100%;
+            height: 3100px;
+            border: 2px solid black;
+            display: flex;
+            background-color: #0f1014;
+        }
+        #navbar >div:nth-child(1) {
+            width: 10%;
+            height: 620px;
+            /* border: 2px solid red; */
+            position: fixed;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) {
+            width: 100%;
+            height: 120px;
+            /* border: 2px solid blue; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >img {
+            width: 50%;
+            margin: 20px 30px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(1) >button {
+            background-color: #352d24;
+            color: #dcb46c;
+            border-radius: 10px;
+            margin: 0px 20px;
+            font-weight: lighter;
+        }
+        
+        #navbar >div:nth-child(1) >div:nth-child(2) {
+            /* width: 100%; */
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 50px 0px 10px 0px;
+            /* display: flex; */
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2) >i {
+            margin: 10px 55px;
+        }
+        /* #navbar >div:nth-child(1) >div:nth-child(2) >h3{
+            width: 100px;
+            color: #ccd2db;
+            margin: 0px 0px 63px 0px;
+            margin-top: -25px;
+            margin-left: 100px;
+            display: none;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(2):hover >h3 {
+            display: initial;
+            cursor: pointer;
+        } */
+        #navbar >div:nth-child(1) >div:nth-child(3) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(3) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(4) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(5) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(6) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) {
+            width: 100%;
+            height: 40px;
+            /* border: 2px solid blue; */
+            margin: 20px 0px;
+        }
+        #navbar >div:nth-child(1) >div:nth-child(7) >i {
+            margin: 10px 55px;
+        }
+        #navbar >div:nth-child(2) {
+            width: 90%;
+            height: 2000px;
+            /* border: 2px solid red; */
+            margin-left: 135px;
+        }
+        .up {
+            width: 90%;
+            /* height: 250px; */
+            /* border: 2px solid gold; */
+            display: flex;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .up >div:nth-child(1) {
+            width: 50%;
+            /* height: 220px; */
+            /* border: 1px solid brown; */
+        }
+        .up >div:nth-child(1) >img {
+            width: 100%;
+            height: 250px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .up >div:nth-child(2) {
+            width: 50%;
+            /* height: 250px; */
+            /* border: 1px solid brown; */
+            background-color: #16181f;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .up >div:nth-child(2) >div:nth-child(1) {
+            width: 45%;
+            /* height: 55px; */
+            /* border: 2px solid green; */
+            margin: 25px 20px 5px 30px;
+            display: flex;
+        }
+        .up >div:nth-child(2) >div:nth-child(1) >div:nth-child(1) >img {
+            width: 50px;
+            /* height: 50px; */
+            border-radius: 5px;
+        }
+        .up >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h3 {
+            color: snow;
+            margin: 5px 10px;
+            font-size: 17px;
+        }
+        .up >div:nth-child(2) >div:nth-child(1) >div:nth-child(2) >h4 {
+            color: rgb(95, 90, 90);
+            margin: 5px 10px;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        .up >div:nth-child(2) >div:nth-child(2) {
+            width: 70%;
+            /* height: 50px; */
+            /* border: 2px solid green; */
+            margin: 10px 20px 5px 30px;
+        }
+        .up >div:nth-child(2) >div:nth-child(2) >h3 {
+            font-size: 17px;
+            color: snow;
+            margin: 0px;
+            font-weight: lighter;
+        }
+        .up >div:nth-child(2) >div:nth-child(3) {
+            width: 50%;
+            /* height: 50px; */
+            /* border: 2px solid green; */
+            margin: 20px 20px 5px 30px;
+        }
+        .up >div:nth-child(2) >div:nth-child(3) >input {
+            width: 65%;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #252833;
+            border: none;
+            color: snow;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .up >div:nth-child(2) >div:nth-child(3) >input:hover {
+            cursor: pointer;
+            
+        }
+        .below {
+            width: 100%;
+            height: 500px;
+            border: 2px solid gold;
+        }
+        .below video side  {
+            z-index: 000;
+            position: absolute;
+            top: 100;
+            left: 100;
+            width: 90%;
+            /* height:50px; */
+            object-fit: cover;
+        }
+        .below >div:nth-child(2)  {
+            /* height: 150px; */
+            margin: 20px 5px;
+            color: snow;
+        }
+        .below >div:nth-child(3) {
+            margin: 10px 5px;
+            width: 40%;
+            color: snow;
+        }
+        .below >div:nth-child(4)  {
+            display: flex;
+            width: 24%;
+            height: 50px;
+            /* border: 2px solid red; */
+            justify-content: space-between;
+            margin: 40px 5px;
+        }
+        .below >div:nth-child(4) >div:nth-child(1) >button {
+            width: 250%;
+            font-size: 15px;
+            color: snow;
+            font-weight: bold;
+            background-color:#212225;
+            height: 50px;
+            border-radius: 5px;
+        } 
+        .below >div:nth-child(4) >div:nth-child(2) >button {
+            width: 250%;
+            font-size: 15px;
+            color: snow;
+            font-weight: bold;
+            background-color:#212225;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        #products4 {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid gold; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer {
+            width: 100%;
+            height: 200px;
+            /* border: 2px solid gold; */
+            margin: 35px 0px;
+        }
+        
+        .footer >div:nth-child(1) {
+            width: 100%;
+            height: 130px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer >div:nth-child(1) >div{
+            width: 24%;
+            height: 130px;
+            /* border: 2px solid gold; */
+        }
+        .footer >div:nth-child(1) >div >h3 {
+            color: rgb(202, 195, 195);
+            font-size: 16px;
+        }
+        .footer >div:nth-child(1) >div >p {
+            color: rgb(114, 113, 113);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .footer >div:nth-child(1) >div >i {
+            margin: 10px 20px;
+        }
+        .footer >div:nth-child(2) {
+            width: 100%;
+            height: 60px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer >div:nth-child(2) >div:nth-child(1) {
+            width: 30%;
+            height: 60px;
+            /* border: 2px solid gold; */
+        }
+        .footer >div:nth-child(2) >div:nth-child(1) >p {
+            color: gray;
+            font-size: 14px;
+            margin: 8px 0px;
+        }
+        .footer >div:nth-child(2) >div:nth-child(2) {
+            width: 30%;
+            height: 60px;
+            /* border: 2px solid gold; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer >div:nth-child(2) >div:nth-child(2) >img {
+            width: 40%;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div>
+                <img src="logo-d-plus.svg"/>
+                <button>Subscribe ></button>
+            </div>
+            <div id="switch">
+                <button onclick="window.location.href=`./HotstarLogin.html`">Login</button>
+                <button onclick="window.location.href=`./HotstarRegister.html`">Register</button>
+            </div>
+            <div id="logout"></div>
+            <div>
+                <i class="fa-regular fa-circle-user" style="color: #ced4de;"></i>
+                <!-- <h3>My Space</h3>
+                <h3>Search</h3>
+                <h3>Home</h3>
+                <h3>TV</h3>
+                <h3>Movies</h3>
+                <h3>Sports</h3> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass" style="color: #cdd4e0;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-house" style="color: #ccd2db;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-tv" style="color: #e3e7ed;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-radio" style="color: #d7dce5;"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball" style="color: #d8dee9;"></i>
+            </div>
+        </div>
+        <div>
+            <div class="up">
+                <div>
+                    <img src="https://shifu.hotstarext.com/SOURCE/VOD/cd-2023-04-15/3RTSv4_deskXbb-8fed3973-129b-416c-9338-0b71af9a614e.jpg"/>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="https://brand-img1.hotstarext.com/image/upload/v1585728139/Disnet%20Plus%20Hotstar%20Logo/D_Hotstar_logo_Dark_BG_120x120.png"/>
+                        </div>
+                        <div>
+                            <h3>Disney+ Hotstar</h3>
+                            <h4>Endless Entertainment</h4>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Don't Wait For This Endless Entertainment, Just A Click Away! </h3>
+                    </div>
+                    <div>
+                        <input type="submit" value="Subscribe"/>
+                    </div>
+                </div>
+            </div>
+            <div class="below">
+                <!-- <video class="video side" src="./insidious-the-red-door-trailer-1_h720p.mov" autoplay muted loop></video> -->
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,h_148/sources/r1/cms/prod/8405/1408405-t-17443bee6e28"/>
+                <div>
+                    <span>2021 -</span> <span>1h 20m -</span> <span>Hindi -</span> <button>U/A 18+</button>
+                </div>
+                <div>
+                    <p>The call for some fun and adventure brings a couple to <br>
+                        Dharmashala, a small hill station nestled in the Himalayas. However, an anomous twist of fate puts...
+                    </p>
+                    <h4>Thriller</h4>
+                </div>
+                <div>
+                    <div>
+                        <button>Watch Now</button>
+                    </div>
+                    <div>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+    <div id="products4"></div>
+
+    <diV class="footer">
+        <div>
+            <div>
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+            </div>
+            <div>
+                <h3>View Website in</h3>
+                <p>English</p>
+            </div>
+            <div>
+                <h3>Need Help?</h3>
+                <p>Visit Help Center</p>
+                <p>Share Feedback</p>
+            </div>
+            <div>
+                <h3>Connect with Us</h3>
+                <i class="fa-brands fa-facebook-f" style="color: #d3d5d9;"></i>
+                <i class="fa-brands fa-twitter" style="color: #d1d7e0;"></i>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>© 2023 STAR. All Rights Reserved.</p>
+                <p>Terms of Use  Privacy Policy  FAQ</p>
+            </div>
+            <div>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1661346101/google-playstore"/>
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,q_90,w_256/v1661346071/ios-appstore"/>
+            </div>
+        </div>
+    </diV>
+
+    <script>
+        window.onload = function(){
+            // alert("working")
+            var divToShowProducts = document.getElementById("products4");
+            var finalData = "";
+
+            var productsFromLS = JSON.parse(localStorage.getItem("Products4"));
+            for (var i=0;i <productsFromLS.length;i++){
+                // console.log(productsFromLS[i],'productFromLS')
+                finalData += `<div id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
+            }
+            console.log(finalData,"finalData here")
+            divToShowProducts.innerHTML = finalData;
+
+        }
+    </script>
+</body>
+</html>
