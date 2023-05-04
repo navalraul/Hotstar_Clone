@@ -42,7 +42,7 @@
             color: #e1e6f0;
             margin: 30px 20px;
         }
-        .input >input {
+        .input >form >input {
             width: 70%;
             height: 40px;
             /* border: 2px solid red; */
@@ -89,15 +89,11 @@
                 <h3>Login to continue</h3>
                 </div>
                 <div class="input">
-                    <!-- <label for="Email">Email</label> -->
-                    <input type="text" placeholder="Enter your Email"/>
-                </div>
-                <div class="input">
-                    <!-- <label>Password</label> -->
-                    <input type="password" placeholder="Enter your Password"/>
-                </div>
-                <div class="button">
-                    <button>Login In</button>
+                    <form onsubmit="login(event)">
+                        <input id="Hotstaruseremail" type="text" placeholder="Enter your Email" />
+                        <input id="Hotstaruserpassword" type="password" placeholder="Enter your Password" />
+                        <input type="submit" value="Login"/>
+                        </form>
                 </div>
                 <div class="last">
                     <h4>Having trouble logged in?</h4><span>Get Help</span>
@@ -105,5 +101,8 @@
             </div>
         </div>
     </div>
+
+
+    <script src="hotstar2.js"></script>
 </body>
 </html>
