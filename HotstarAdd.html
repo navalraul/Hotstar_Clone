@@ -28,10 +28,10 @@
             var proImage = document.getElementById("mimage").value;
             var product = {proName,proPrice,proImage};
 
-            var LS =JSON.parse (localStorage.getItem("Products4")) || [];
+            var LS =JSON.parse (localStorage.getItem("HotstarProducts")) || [];
             LS.push(product);
 
-            localStorage.setItem("Products4",JSON.stringify(LS));
+            localStorage.setItem("HotstarProducts",JSON.stringify(LS));
 
             alert("Product added successfully.")
         }

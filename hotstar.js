@@ -33,6 +33,9 @@ function register(event) {
                     document.getElementById("Hotstaruserpassword").value = ""
                     document.getElementById("Hotstaruserconfirmpassword").value = ""
                 }
+                else {
+                    alert("Email aleready exist")
+                }
             }else {
                 console.log("Password Not Matched")
             }

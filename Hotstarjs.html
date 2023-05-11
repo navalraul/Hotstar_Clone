@@ -246,7 +246,7 @@
             border-radius: 5px;
         }
 
-        #products4 {
+        #Hotstarproducts {
             width: 100%;
             height: 500px;
             /* border: 1px solid gold; */
@@ -395,7 +395,7 @@
                     </div>
                 </div>
             </div>
-    <div id="products4"></div>
+    <div id="Hotstarproducts"></div>
 
     <diV class="footer">
         <div>
@@ -434,17 +434,44 @@
     <script>
         window.onload = function(){
             // alert("working")
-            var divToShowProducts = document.getElementById("products4");
+            var divToShowProducts = document.getElementById("Hotstarproducts");
             var finalData = "";
 
-            var productsFromLS = JSON.parse(localStorage.getItem("Products4"));
-            for (var i=0;i <productsFromLS.length;i++){
+            var productsFromLS = JSON.parse(localStorage.getItem("HotstarProducts"));
+            for (var i=0;i < productsFromLS.length;i++){
                 // console.log(productsFromLS[i],'productFromLS')
-                finalData += `<div id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
+                finalData += `<div onclick = 'redirect(${JSON.stringify(productsFromLS[i])})' id='singlepro'><img src =${productsFromLS[i].proImage} /><h3>${productsFromLS[i].proName}</h3><p>${productsFromLS[i].proPrice}</p></div>`
             }
             console.log(finalData,"finalData here")
             divToShowProducts.innerHTML = finalData;
 
+            alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("HotstarcurrentUser"));
+
+            if (!!currentUser){
+                var logoutDiv = document.getElementById("logout");
+                var divFromHtml = document.getElementById("switch");
+
+                var button = '<button onclick="logout()">Logout</button>'
+                var name = `<h1>${currentUser.userName}</h1>`;
+                divFromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+            }else {
+                alert("Current User Absent")
+            }
+            // console.log(currentUser,"userEmail")
+        }
+        function logout(){
+            alert("Working")
+            localStorage.removeItem("HotstarcurrentUser");
+            window.location.reload();
+        }
+
+        function redirect(Hotstarproduct) {
+            var singleproduct = JSON.stringify(Hotstarproduct);
+
+            localStorage.setItem("Hotstarcurrent-product", singleproduct);
+            window.location.href = './HotstarSingle.html'
         }
     </script>
 </body>

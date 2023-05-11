@@ -7,17 +7,17 @@ function login (event){
 
     var Ls = JSON.parse(localStorage.getItem("HotUsers"));
 
-    var currentUser;
+    var HotstarcurrentUser;
     var flag = false;
     for (var i=0;i< Ls.length;i++) {
         if (Ls[i].userEmail == userEmail && Ls[i].userPassword == userPassword) {
             flag = true;
-            currentUser = Ls[i];
+            HotstarcurrentUser = Ls[i];
         }
     }
     if (flag == true) {
-        localStorage.setItem("currentUser",JSON.stringify(currentUser))
-        window.location.href = './HotstarHome.html';
+        localStorage.setItem("HotstarcurrentUser",JSON.stringify(HotstarcurrentUser))
+        window.location.href = './Hotstarjs.html';
         alert("Login Successful")
     }else {
         alert("Credential not Matched")
